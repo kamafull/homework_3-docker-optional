@@ -14,7 +14,6 @@ import ru.dhabits.docker.repository.UserRepository;
 @RestController
 @RequestMapping("/user")
 public class UserController {
-
     private final UserRepository userRepository;
 
     public UserController(UserRepository userRepository) {

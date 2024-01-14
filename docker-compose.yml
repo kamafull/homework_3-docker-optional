@@ -1,0 +1,16 @@
+version: '3'
+services:
+  client-app:
+    container_name: 'client-app'
+    image: homework_3-docker-optional_admin-app:v1
+    build: ./client-service
+    restart: always
+    ports:
+      - 8080:8080
+  admin-app:
+    container_name: 'admin-app'
+    image: homework_3-docker-optional_client-app:v1
+    build: ./admin-server
+    restart: always
+    ports:
+      - 9003:9003

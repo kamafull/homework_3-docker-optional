@@ -14,7 +14,6 @@ import ru.dhabits.docker.model.UserEntity;
 @RestController
 @RequestMapping("/mock/user")
 public class SimpleUserController {
-
     Map<String, UserEntity> userRepository = new HashMap<>();
 
     @GetMapping("/{id}")
